@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "WordPress theme with Tailwind CSS v4",
   "scripts": {
-    "dev": "tailwindcss ./assets/css/src/style.css -o ./assets/css/style.css --watch",
-    "build": "tailwindcss ./assets/css/src/style.css -o ./assets/css/style.css --minify"
+    "dev": "tailwindcss -i ./assets/css/src/style.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./assets/css/src/style.css -o ./assets/css/style.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "next"

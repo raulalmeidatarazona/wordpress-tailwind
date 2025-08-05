@@ -1,1 +1,41 @@
-@import "tailwindcss/preflight";.mx-auto{margin-left:auto;margin-right:auto}.my-8{margin-top:2rem;margin-bottom:2rem}.mt-4{margin-top:1rem}.text-center{text-align:center}.text-4xl{font-size:2.25rem;line-height:2.5rem}.font-bold{font-weight:700}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.decoration-wavy{text-decoration-style:wavy}
+@import "tailwindcss/preflight";
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
+
+.mt-4 {
+  margin-top: 1rem
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+
+.font-bold {
+  font-weight: 700
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1))
+}
+
+.underline {
+  text-decoration-line: underline
+}
+
+.decoration-wavy {
+  text-decoration-style: wavy
+}

@@ -1,0 +1,12 @@
+{
+  "name": "my-theme",
+  "version": "1.0.0",
+  "description": "WordPress theme with Tailwind CSS",
+  "scripts": {
+    "dev": "tailwindcss -i ./assets/css/src/style.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./assets/css/src/style.css -o ./assets/css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

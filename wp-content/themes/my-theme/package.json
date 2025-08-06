@@ -1,12 +1,18 @@
 {
-  "name": "my-theme",
+  "name": "monkiria",
   "version": "1.0.0",
-  "description": "WordPress theme with Tailwind CSS v4",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./assets/css/src/style.css -o ./assets/css/style.css --watch",
-    "build": "tailwindcss -i ./assets/css/src/style.css -o ./assets/css/style.css --minify"
+    "dev": "npx @tailwindcss/cli -i ./assets/css/src/style.css -o ./assets/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/src/style.css -o ./assets/css/style.css --minify"
   },
-  "devDependencies": {
-    "tailwindcss": "next"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
   }
 }

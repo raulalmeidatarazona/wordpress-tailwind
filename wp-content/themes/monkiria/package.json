@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./assets/css/src/style.css -o ./assets/css/style.css --watch",
-    "build": "npx @tailwindcss/cli -i ./assets/css/src/style.css -o ./assets/css/style.css --minify"
+    "build": "npx @tailwindcss/cli -i ./assets/css/src/style.css -o ./assets/css/style.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/src/style.css -o ./assets/css/style.css --watch",
+    "watch:browser": "browser-sync start --config bs-config.js",
+    "dev": "concurrently \"npm:watch:*\""
   },
   "keywords": [],
   "author": "",
@@ -14,5 +16,9 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0"
   }
 }

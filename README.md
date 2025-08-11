@@ -35,7 +35,7 @@ This project provides a simple and professional local development environment fo
 
 ## Theme Development with Tailwind CSS
 
-The `my-theme` theme is configured to use Tailwind CSS.
+The `monkiria` theme is configured to use Tailwind CSS.
 
 1.  **Navigate to the theme directory:**
 
@@ -56,6 +56,29 @@ The `my-theme` theme is configured to use Tailwind CSS.
     ```
 
     This command will watch for changes in `.php` files and `assets/css/src/style.css`, and automatically compile the final CSS to `assets/css/style.css`.
+
+### Browser Auto-Refresh Configuration
+
+The automatic browser refreshing is handled by **BrowserSync**. The configuration is in the `wp-content/themes/monkiria/bs-config.js` file.
+
+If your local WordPress environment runs on a different URL, you **must** update the `proxy` value in this file:
+
+```javascript
+// bs-config.js
+module.exports = {
+    // IMPORTANT: Change this URL to your local WordPress address.
+    // You can find the port in your docker-compose.yml file.
+    proxy: "http://localhost:8000",
+
+    // Files to watch for changes
+    files: [
+        './assets/css/style.css', // The compiled CSS from Tailwind
+        './**/*.php',             // All theme PHP files
+        './assets/js/**/*.js'     // All JS files
+    ],
+    // ... more options
+};
+```
 
 ## WP-CLI
 

@@ -59,7 +59,7 @@ The `my-theme` theme is configured to use Tailwind CSS.
 
 ### Browser Auto-Refresh Configuration
 
-The automatic browser refreshing is handled by **BrowserSync**. The configuration is in the `wp-content/themes/monkiria/bs-config.js` file.
+The automatic browser refreshing is handled by **BrowserSync**. The configuration is in the `wp-content/themes/my-theme/bs-config.js` file.
 
 If your local WordPress environment runs on a different URL, you **must** update the `proxy` value in this file:
 
@@ -79,7 +79,6 @@ module.exports = {
     // ... more options
 };
 ```
-
 ## WP-CLI
 
 WP-CLI is available in the WordPress container. To use it, run:

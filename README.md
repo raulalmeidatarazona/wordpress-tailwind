@@ -35,12 +35,12 @@ This project provides a simple and professional local development environment fo
 
 ## Theme Development with Tailwind CSS
 
-The `monkiria` theme is configured to use Tailwind CSS.
+The `my-theme` theme is configured to use Tailwind CSS.
 
 1.  **Navigate to the theme directory:**
 
     ```bash
-    cd wp-content/themes/monkiria
+    cd wp-content/themes/my-theme
     ```
 
 2.  **Install Node.js dependencies:**
